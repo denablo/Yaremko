@@ -1,0 +1,126 @@
+<!-- Форма реєстрації -->
+        <section id="registration">
+            <h2>Форма зворотного зв'язку</h2>
+            
+            <form action="" method="get">
+                <!-- Текстове поле (Ім'я) -->
+                <p>
+                    <label>Ім'я: <input type="text" name="username" required></label>
+                </p>
+
+                <!-- Email -->
+                <p>
+                    <label>Email: <input type="email" name="user_email" required></label>
+                </p>
+
+                <!-- Пароль -->
+                <p>
+                    <label>Пароль: <input type="password" name="user_password" required></label>
+                </p>
+
+                <!-- Дата народження -->
+                <p>
+                    <label>Дата народження: <input type="date" name="dob"></label>
+                </p>
+
+                <!-- Число -->
+                <p>
+                    <label>Курс: <input type="number" name="course" min="1" max="67" value="1"></label>
+                </p>
+
+                <!-- Checkbox (декілька опцій) -->
+                <p>
+                    Ваші інтереси:<br>
+                    <label><input type="checkbox" name="skills" value="html"> HTML</label><br>
+                    <label><input type="checkbox" name="skills" value="css"> CSS</label>
+                    <label><input type="checkbox" name="skills" value="САНЯ"> САНЯ</label>
+                </p>
+
+                <!-- Radio (один з варіантів) -->
+                <p>
+                    Форма навчання:<br>
+                    <label><input type="radio" name="form" value="day" checked> Денна</label><br>
+                    <label><input type="radio" name="form" value="extra"> Заочна</label>
+
+                </p>
+
+                <!-- Select з multiple -->
+                <p>
+                    <label>Обрати декілька предметів (Затисніть Ctrl):</label><br>
+                    <select name="subjects" multiple size="3">
+                        <option value="math">Математика</option>
+                        <option value="web">Веб-розробка</option>
+                        <option value="design">Дизайн</option>
+                    </select>
+                </p>
+
+
+		<!-- Початок таблиці (border="1" додає рамку навколо комірок) -->
+<table border="1">
+    
+    <!-- Заголовок таблиці -->
+    <caption>Розклад лабораторних робіт бригади №5</caption>
+
+    <!-- Шапка таблиці (верхній рядок із назвами стовпчиків) -->
+    <thead>
+        <tr>
+            <th>День</th>
+            <th>Предмет</th>
+            <th>Час</th>
+            <th>Аудиторія</th>
+		<th>Настрій</th>
+        </tr>
+    </thead>
+
+    <!-- Основне тіло таблиці з даними -->
+    <tbody>
+        <tr>
+            <td>Понеділок</td>
+            <td>Веб-програмування</td>
+            <td>08:30 - 10:05</td>
+            <td>101-К</td>
+		<td>задовільний</td>
+        </tr>
+        <tr>
+            <td>Середа</td>
+            <td>Бази даних</td>
+            <td>10:20 - 11:55</td>
+            <td>205-К</td>
+		<td>готовий зїсти слона</td>
+        </tr>
+        <tr>
+            <td>П'ятниця</td>
+            <td>Алгоритми та структури даних</td>
+            <td>12:10 - 13:45</td>
+            <td>303-К</td>
+	<td>смерть</td>
+        </tr>
+    </tbody>
+
+    <!-- Підвал таблиці (наприклад, для підсумків чи приміток) -->
+    <tfoot>
+        <tr>
+            <!-- colspan="4" об'єднує 4 стовпчики в один великий рядок -->
+            <td colspan="4">Всього: 3 лабораторні роботи на тиждень</td>
+        </tr>
+    </tfoot>
+
+</table>
+                <!-- Textarea -->
+                <p>
+                    <label>Коментар:</label><br>
+                    <textarea name="comment" rows="4" cols="30"></textarea>
+                </p>
+
+		<!-- Radio (один з варіантів) -->
+                <p>
+                    падпісать контракт і отправитись з саньою на Бамбас:<br>
+                    <label><input type="radio" name="form" value="day" checked> ДА</label><br>
+                    <label><input type="radio" name="form" value="extra"> НЕТ</label>
+                </p>
+
+                <!-- Кнопка відправки -->
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+    </main>
